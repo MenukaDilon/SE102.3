@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script>
+            var avg = 0 ;
+            var tot = 0;
+
+            function average(){
+                var x=0;
+                while(5>x){
+                    var mark = parseInt(prompt("Enter a mark"));
+                    if(mark!=null && mark!=""){
+                            tot = tot+ mark;
+                            x++;
+                    }
+                    
+                }
+                avg = tot/5;
+                document.getElementById("sum").innerHTML= "Sum is: "+tot;
+                document.getElementById("avg").innerHTML= "Average: "+avg;
+            }
+
+            function message(){
+                if(avg>30){
+                    alert("Congrats! you passed!");
+                }
+                else{
+                    alert("Better luck next time");
+                }
+            }
+        </script>
+    </head>
+    <body onload="average()">
+        <p id="sum"></p>
+        <p id="avg"></p>
+        <input type="button" name="btn" value="Grade" onclick="message()">
+    </body>
+</html>

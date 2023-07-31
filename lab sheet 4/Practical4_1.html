@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <style>
+       body{ 
+        background-image: url(images.jpeg);
+        background-size: cover;
+            
+       }
+       .form{
+            background-color: navy;
+            padding: 5px;
+            margin: 15% 30%;
+       }
+       .form table{
+        color: yellow;
+       }
+       .form .sign{
+            background-color: rgb(191, 127, 7);
+            color: white;
+            padding: 1px ;
+       }
+       .form .sign h2{
+            text-align: center;
+       }
+       .month{
+        width: 100px;
+       }
+       .submit{
+        background-color: goldenrod;
+        border: none;
+       }
+       .reset{
+        background-color: red;
+        border: none;
+       }
+       .footer{
+            padding: 5px ;
+       }
+        </style>
+    </head>
+    <body>
+        <div class="form">
+            <form>
+                <div class="sign">
+                    <h2>Sign Up</h2>
+                </div>
+                <table>
+                    <tr>
+                        <td>First name</td>
+                        <td><input type="text" name="fname" placeholder="Enter first Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Last name</td>
+                        <td><input type="text" name="sname" placeholder="Enter last Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth</td>
+                        <td><select name="date">
+                            <option value="">Date</option>
+                            </select>
+                            <select name="Month" class="month">
+                                <option value="">Month</option>
+                            </select>
+                            <select name="Year">
+                                <option value="Year">Year</option>
+                    </td>
+                    </tr>    
+                    <tr>
+                        <td>Gender</td>
+                        <td><input type="radio" name="gen">Male <input type="radio" name="gen">Female</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Country
+                        </td>
+                        <td>
+                            <select name="Country">
+                                <option value="">Country</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>E-mail</td>
+                        <td><input type="email" name="email" placeholder="enter E-mail"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Phone
+                        </td>
+                        <td>
+                            <input type="number" name="num" placeholder="Enter phone">
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td>password</td>
+                        <td><input type="password" name="pass"></td>
+                    </tr> 
+                    <tr>
+                        <td>Confirm Password</td>
+                        <td><input type="password" name="cpass"></td>
+                    </tr>
+                    <tr>
+                        <td ></td>
+                        <td><input type="checkbox" name="terms">I Agree to the Terms of Use</td>
+                    </tr>  
+                </table>
+                <div class="footer">
+                    <input type="submit" value="Submit" class="Submit">
+                    <input type="reset" value="cancel" class="reset">
+
+                </div>             
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            function red(){
+                document.getElementById("color").style.background="red";
+            }
+            function green(){
+                document.getElementById("color").style.background="green";
+            }
+            function blue(){
+                document.getElementById("color").style.background="blue";
+            }
+            function normal(){
+                document.getElementById("color").style.background="white";
+            }
+        </script>
+    </head>
+    <body id="color">
+        <input type="button" name ="btn" value="Red" onmouseover="red()" onmouseout="normal()">
+        <input type="button" name ="btn" value="Green" onmouseover="green()" onmouseout="normal()">
+        <input type="button" name ="btn" value="Blue" onmouseover="blue()" onmouseout="normal()">
+    </body>
+</html>
